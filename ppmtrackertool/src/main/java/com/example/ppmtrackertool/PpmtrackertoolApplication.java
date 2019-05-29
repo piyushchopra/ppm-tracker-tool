@@ -9,5 +9,4 @@ public class PpmtrackertoolApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PpmtrackertoolApplication.class, args);
 	}
-
 }
