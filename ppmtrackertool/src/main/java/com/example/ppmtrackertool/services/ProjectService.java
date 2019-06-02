@@ -1,4 +1,4 @@
-package com.example.ppmtrackertool;
+package com.example.ppmtrackertool.services;
 
 import com.example.ppmtrackertool.domain.Project;
 import com.example.ppmtrackertool.repository.ProjectRepository;
