@@ -31,6 +31,12 @@ public class ProjectController {
         return new ResponseEntity<Project>(project, HttpStatus.CREATED);
     }
 
+    @GetMapping("/{projectId}")
+    public ResponseEntity<?> findProjectByIdentifier(@PathVariable String projectId) {
+        Project project = projectService.getProjectByIdentifier(projectId);
+        return new ResponseEntity<Project>(project, HttpStatus.OK);
+    }
+
     @GetMapping("/test")
     public String testMesage() {
         return "Test Message!";
